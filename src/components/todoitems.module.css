@@ -11,3 +11,9 @@
 .line {
   border: 1px solid #f4f4f4;
 }
+
+.delete {
+  float: right;
+  border: none;
+  border-radius: 0.3rem;
+}
