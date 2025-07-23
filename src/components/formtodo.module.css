@@ -1,0 +1,28 @@
+.Mainform {
+  background-color: #f2bfa4;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 10px;
+  width: 500px;
+  display: flex;
+  border-radius: 0.8rem;
+}
+
+.modern {
+  display: block;
+  border: none;
+  width: 100%;
+  background-color: #f2bfa4;
+  font-size: 16px;
+}
+
+.modern:focus {
+  outline: none;
+}
+
+.btn {
+  background-color: #f5e7de;
+  border: none;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+}
