@@ -1,0 +1,10 @@
+.footer {
+  background-color: #f5e7de;
+  position: fixed;
+  bottom: 1%;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

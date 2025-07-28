@@ -17,3 +17,7 @@
   border: none;
   border-radius: 0.3rem;
 }
+
+.completed {
+  text-decoration: line-through;
+}

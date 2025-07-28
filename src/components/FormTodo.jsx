@@ -1,11 +1,12 @@
 import { useState } from "react";
 import styles from "./formtodo.module.css";
 export default function FormTodo({ todos, settodos }) {
-  const [todo, settodo] = useState("");
+  const [todo, settodo] = useState({ name: "", completed: false });
+
   function handleSubmit(e) {
     e.preventDefault();
     settodos([...todos, todo]);
-    settodo("");
+    settodo({ name: "", completed: false });
   }
 
   return (
@@ -14,8 +15,8 @@ export default function FormTodo({ todos, settodos }) {
         placeholder="Enter todo..."
         className={styles.modern}
         type="text"
-        value={todo}
-        onChange={(e) => settodo(e.target.value)}
+        value={todo.name}
+        onChange={(e) => settodo({ name: e.target.value, completed: false })}
       />
 
       <button className={styles.btn} type="submit">
